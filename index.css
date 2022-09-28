@@ -5,13 +5,17 @@ html * {
 }
 
 html {
-  border: 5px blue solid;
   padding: 0px 15px;
   height: 98vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+h3 {
+  font-size: x-large;
+}
+
 main.stepper {
   height: 95vh;
   display: grid;
@@ -20,8 +24,8 @@ main.stepper {
 }
 
 .progress {
-  height: 80%;
-  border-radius: 10px;
+  height: 100%;
+  border-radius: 15px;
   background-color: rgba(128, 128, 128, 0.15);
 
   display: flex;
@@ -38,7 +42,7 @@ main.stepper {
 .line-solid {
   width: 60px;
   height: 0;
-  border: 1px solid rgb(0, 128, 94);
+  border: 1px solid rgb(10, 184, 137);
   display: inline-block;
 }
 
@@ -51,30 +55,30 @@ main.stepper {
 
 span.p-number {
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   text-align: center;
 }
 
 .p-number {
-  color: rgb(23, 103, 252);
+  color: rgb(84, 23, 252);
 }
 
 .p-green {
-  color: rgb(0, 128, 94);
+  color: rgb(10, 184, 137);
 }
 
 .p-blue {
-  color: rgb(23, 103, 252);
+  color: rgb(84, 23, 252);
 }
 
 span.p-g {
-  background-color: rgb(0, 128, 94);
+  background-color: rgb(10, 184, 137);
   color: white;
 }
 
 span.p-b {
-  background-color: rgb(23, 103, 252);
+  background-color: rgb(84, 23, 252);
   color: white;
 }
 
@@ -84,12 +88,17 @@ div.meal > div.m-time > div.t-time {
 }
 
 .food_0 {
-  padding-right: 20px;
+  padding-right: 25px;
   display: grid;
 }
 
 .drink_0 {
   display: grid;
+}
+
+div.food_0 > label,
+div.drink_0 > label {
+  padding: 8px 0px;
 }
 
 div.m-check {
@@ -145,7 +154,7 @@ div.next {
 }
 
 div.next > button.continue {
-  background-color: rgb(23, 103, 252);
+  background-color: rgb(84, 23, 252);
   color: white;
 }
 
