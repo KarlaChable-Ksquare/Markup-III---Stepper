@@ -20,17 +20,39 @@ main.stepper {
 }
 
 .progress {
-  /*height: 70%;*/
+  height: 80%;
   border-radius: 10px;
-  border: 1px rgba(128, 128, 128, 0.25) solid;
   background-color: rgba(128, 128, 128, 0.15);
 
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.progress * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-solid {
+  width: 60px;
+  height: 0;
+  border: 1px solid rgb(0, 128, 94);
+  display: inline-block;
+}
+
+.line-dotted {
+  width: 60px;
+  height: 0;
+  border: 1px dashed rgba(0, 0, 0, 0.55);
+  display: inline-block;
 }
 
 span.p-number {
   border-radius: 50%;
+  height: 50px;
+  width: 50px;
   text-align: center;
 }
 
