@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./index.css" type="text/css" />
+  <title>Markup III - Stepper</title>
+</head>
+<body>
+  <main class="stepper">
+    <div class="progress">
+      <span class="p-number p-green p-g">1</span>
+      <span class="p-text p-green">Cabin</span>
+      <span class="p-number p-blue p-b">2</span>
+      <span class="p-text p-blue">Meals</span>
+      <span class="p-number">3</span>
+      <span class="p-text">Upgrades</span>
+      <span class="p-number">4</span>
+      <span class="p-text">Payment</span>
+    </div>
+    <div class="meal">
+      <div class="m-desciption">
+        <h3>Meal Preferences</h3>
+        <p>Your flight comes with breackfast, lunch, and dinner. Please make your selections below. Changes to your
+          order can be made up to 48 hours before your flight.</p>
+      </div>
+      <div class="m-time">
+        <div class="t-time">
+          <div class="1-food">
+            <label from="Breakfast">Breakfast</label>
+            <select id="Breakfast" name="Breakfast">
+              <option value="">Choose one option</option>
+              <option value="Saussage Egg Scramble Bowl">Saussage Egg Scramble Bowl</option>
+              <option value="Egg Sandwich">Egg Sandwich</option>
+              <option value="Green Eggs and Ham">Green Eggs and Ham</option>
+              <option value="Chilaquiles">Chilaquiles</option>
+            </select>
+            <br />
+            <label from="Lunch">Lunch</label>
+            <select id="Lunch" name="Lunch">
+              <option value="">Choose one option</option>
+              <option value="Club Sandwich Meal">Club Sandwich Meal</option>
+              <option value="BBQ rainbow beef salad">BBQ rainbow beef salad</option>
+              <option value="Tomato penne with avocado">Tomato penne with avocado</option>
+              <option value="Macaroni and cheese">Macaroni and cheese</option>
+            </select>
+            <br />
+            <label from="Dinner">Dinner</label>
+            <select id="Dinner" name="Dinner">
+              <option value="">Choose one option</option>
+              <option value="Wagyu Beef Sliders Meal">Wagyu Beef Sliders Meal</option>
+              <option value="Oven-Baked French Bread Pizzas">Oven-Baked French Bread Pizzas</option>
+              <option value="Upgraded Ramen">Upgraded Ramen</option>
+              <option value="Pesto Chicken Bake">Pesto Chicken Bake</option>
+            </select>
+          </div>
+          <div class="2-drink">
+            <label from="Breakfast-drink">Drink</label>
+            <select id="Breakfast-drink" name="Breakfast-drink">
+              <option value="">Choose one option</option>
+              <option value="Coffe">Coffe</option>
+              <option value="Cranberry Juice">Cranberry Juice</option>
+              <option value="Red Wine">Red Wine</option>
+              <option value="Water">Water</option>
+            </select>
+            <br />
+            <label from="Lunch-drink">Drink</label>
+            <select id="Lunch-drink" name="Lunch-drink">
+              <option value="">Choose one option</option>
+              <option value="Coffe">Coffe</option>
+              <option value="Cranberry Juice">Cranberry Juice</option>
+              <option value="Red Wine">Red Wine</option>
+              <option value="Water">Water</option>
+            </select>
+            <br />
+            <label from="Dinner-drink">Drink</label>
+            <select id="Dinner-drink" name="Dinner-drink">
+              <option value="">Choose one option</option>
+              <option value="Coffe">Coffe</option>
+              <option value="Cranberry Juice">Cranberry Juice</option>
+              <option value="Red Wine">Red Wine</option>
+              <option value="Water">Water</option>
+            </select>
+          </div>
+        </div>
+        <div class="t-drink"></div>
+      </div>
+      <div class="m-check">
+        <label><input type="checkbox" id="checkbox" value="yes">I'd like dessert, Too!</label>
+      </div>
+    </div>
+    <div class="next">
+      <button class="back">Back</button>
+      <button class="continue">Continue</button>
+    </div>
+  </main>
+</body>
+</html>
