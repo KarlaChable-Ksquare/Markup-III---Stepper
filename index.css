@@ -1,12 +1,14 @@
 html * {
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 html {
   border: 5px blue solid;
   /*background-color: rgba(170, 211, 211, 0.4);*/
   /*margin: 15px;*/
+  padding: 0px 5px;
   height: 98vh;
   display: flex;
   justify-content: center;
@@ -15,23 +17,21 @@ html {
 main.stepper {
   height: 95vh;
   display: grid;
-  grid-template-rows: 20% 65% 15%;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
-.progress *,
+.progress,
 .meal,
 .next {
-  /*border: black 2px solid;*/
+  border: 2px red solid;
 }
-
 .progress {
+  height: 70%;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.15);
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  align-self: center;
-  justify-items: center;
-  border-radius: 10px;
-  padding: 25px;
-  background-color: rgba(128, 128, 128, 0.15);
+  align-items: center;
 }
 
 span.p-number {
@@ -66,4 +66,50 @@ span.p-b {
 div.meal > div.m-time > div.t-time {
   display: grid;
   grid-template-columns: 2fr 1fr;
+}
+
+.food_0 {
+  padding-right: 20px;
+  display: grid;
+}
+
+.drink_0 {
+  display: grid;
+}
+
+div.m-check {
+  padding: 15px 0;
+  font-size: 20px;
+}
+
+label,
+select {
+  padding-bottom: 4px;
+}
+
+select {
+  border-radius: 3px;
+}
+
+div.next {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back,
+.continue {
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: solid 2px rgba(128, 128, 128, 0.25);
+}
+
+div.next > button.continue {
+  background-color: rgb(23, 103, 252);
+  color: white;
+}
+
+div.next > button.back {
+  background-color: whitesmoke;
 }
