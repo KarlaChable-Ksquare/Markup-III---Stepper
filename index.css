@@ -82,6 +82,13 @@ span.p-b {
   color: white;
 }
 
+span.p-w {
+  background-color: white;
+  color: rgb(84, 23, 252);
+  border: 1px rgba(128, 128, 128, 0.25) solid;
+  box-shadow: 1px 1px 1px 1px rgba(126, 126, 126, 0.1);
+}
+
 div.meal > div.m-time > div.t-time {
   display: grid;
   grid-template-columns: 2fr 1fr;
