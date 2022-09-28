@@ -6,9 +6,7 @@ html * {
 
 html {
   border: 5px blue solid;
-  /*background-color: rgba(170, 211, 211, 0.4);*/
-  /*margin: 15px;*/
-  padding: 0px 5px;
+  padding: 0px 15px;
   height: 98vh;
   display: flex;
   justify-content: center;
@@ -17,27 +15,22 @@ html {
 main.stepper {
   height: 95vh;
   display: grid;
+  align-items: center;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.progress,
-.meal,
-.next {
-  border: 2px red solid;
-}
 .progress {
-  height: 70%;
+  /*height: 70%;*/
   border-radius: 10px;
+  border: 1px rgba(128, 128, 128, 0.25) solid;
   background-color: rgba(128, 128, 128, 0.15);
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  align-items: center;
+
+  display: flex;
+  justify-content: space-around;
 }
 
 span.p-number {
   border-radius: 50%;
-  height: 30px;
-  width: 30px;
   text-align: center;
 }
 
@@ -112,4 +105,14 @@ div.next > button.continue {
 
 div.next > button.back {
   background-color: whitesmoke;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.back:hover,
+button.continue:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.5s;
 }
